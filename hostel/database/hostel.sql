@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `email`, `password`, `reg_date`, `updation_date`) VALUES
-(1, 'admin', 'code.lpu1@gmail.com', 'Test@1234', '2021-04-24 20:31:45', '2021-04-25');
+(1, 'admin', 'code.lpu1@gmail.com', 'Test@1234', '2016-04-04 20:31:45', '2016-04-17');
 
 -- --------------------------------------------------------
 
@@ -70,8 +70,14 @@ CREATE TABLE IF NOT EXISTS `courses` (
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 
 --
-
+-- Dumping data for table `courses`
 --
+
+INSERT INTO `courses` (`id`, `course_code`, `course_sn`, `course_fn`, `posting_date`) VALUES
+(1, 'CSE', 'SEAS', 'Computer Science Engineering', '2021-04-27 20:41:14'),
+(2, 'ECE', 'SEAS', 'Electronics and Communications Engineering', '2021-04-27 20:41:44'),
+(3, 'MECH', 'SEAS', 'Mechanical Engineering', '2021-04-27 20:42:18'),
+(4, 'BBA', 'SLABS', 'Bachelor of Business Administration', '2021-04-27 20:42:58');
 
 -- --------------------------------------------------------
 
@@ -112,7 +118,11 @@ CREATE TABLE IF NOT EXISTS `registration` (
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `registration`
+--
 
+INSERT INTO `registration` (`id`, `roomno`, `seater`, `feespm`, `foodstatus`, `stayfrom`, `duration`, `course`, `regno`, `firstName`, `middleName`, `lastName`, `gender`, `contactno`, `emailid`, `egycontactno`, `guardianName`, `guardianRelation`, `guardianContactno`, `corresAddress`, `corresCIty`, `corresState`, `corresPincode`, `pmntAddress`, `pmntCity`, `pmnatetState`, `pmntPincode`, `postingDate`, `updationDate`) VALUES
+(6, 502, 5, 10000, 0, '2021-04-22', 5, 'CSE',19110010255, 'sai', 'pranay', 'C', 'male', 1234567890, 'saipranay_c@srmap.edu.in', 123456789, 'father', 'father', 12345678, 'jublee hills', 'Hyderabad', 'Telangana', 500000, 'jublee hills', 'Hyderabad', 'Telangana', 500000, '2021-04-16 08:24:09', '');
 
 -- --------------------------------------------------------
 
@@ -129,6 +139,15 @@ CREATE TABLE IF NOT EXISTS `rooms` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `rooms`
+--
+
+INSERT INTO `rooms` (`id`, `seater`, `room_no`, `fees`, `posting_date`) VALUES
+(1, 1, 101, 50000, '2021-04-11 22:45:43'),
+(2, 2, 201, 40000, '2021-04-12 01:30:47'),
+(3, 3, 301, 30000, '2021-04-12 01:30:58'),
+(4, 4, 401, 20000, '2021-04-12 01:31:07'),
+(5, 5, 501, 10000, '2021-04-12 01:31:15');
 
 -- --------------------------------------------------------
 
@@ -201,12 +220,6 @@ CREATE TABLE IF NOT EXISTS `userlog` (
 
 
 --
-
-
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `userregistration`
 --
 
@@ -226,12 +239,14 @@ CREATE TABLE IF NOT EXISTS `userregistration` (
 ) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
 
 --
-
+-- Dumping data for table `userregistration`
 --
 
+INSERT INTO `userregistration` (`id`, `regNo`, `firstName`, `middleName`, `lastName`, `gender`, `contactNo`, `email`, `password`, `regDate`, `updationDate`, `passUdateDate`) VALUES
+(10, '19110010255', 'sai', 'pranay', 'C', 'male', 1234567890, 'saipranay_c@srmap.edu.in', 'hostel', '2021-06-22 04:21:33', '23-06-2021 11:04:15', '22-06-2021 05:16:49');
 
 --
-
+-- Indexes for dumped tables
 --
 
 --

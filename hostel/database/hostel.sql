@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `email`, `password`, `reg_date`, `updation_date`) VALUES
-(1, 'admin', 'code.lpu1@gmail.com', 'Test@1234', '2016-04-04 20:31:45', '2016-04-17');
+(1, 'admin', 'saipranay_c@srmap.edu.in', 'Test@1234', '2021-04-04 20:31:45', '2021-04-17');
 
 -- --------------------------------------------------------
 

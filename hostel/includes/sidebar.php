@@ -9,7 +9,7 @@
 <li><a href="change-password.php"><i class="fa fa-files-o"></i>Change Password</a></li>
 <li><a href="book-hostel.php"><i class="fa fa-file-o"></i>Book Hostel</a></li>
 <li><a href="room-details.php"><i class="fa fa-file-o"></i>Room Details</a></li>
-<li><a href="access-log.php"><i class="fa fa-file-o"></i>Access log</a></li>
+
 <?php } else { ?>
 				
 				<li><a href="registration.php"><i class="fa fa-files-o"></i> User Registration</a></li>
